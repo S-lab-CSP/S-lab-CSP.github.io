@@ -575,7 +575,8 @@ function createEHRCalculator(container) {
     );
 
     const Credits = createElement("div", {},
-        createElement("p", {}, "Originally created by ", createElement("a", { href: "https://www.reddit.com/user/Feeed3/", target: "_blank" }, "Feeed"), "."),
+        createElement("p", {}, "Originally created by ", createElement("a", { href: "https://www.reddit.com/user/Feeed3/", target: "_blank" }, "Feeed"), ".", ),
+        createElement("p", {}, "Original website can be found ", createElement("a", { href: "https://web.archive.org/web/20240815155819/https://hsrtools.com/home", target: "_blank" }, "here"), "."),
     )
     const Calculator = createElement("div", { className: "calculator" }, infoBox, form, Credits);
     const Wrapper = createElement("div", { className: "calculator-wrapper" }, Calculator);
